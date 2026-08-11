@@ -299,76 +299,7 @@
         ];
 
         // Fallback Mock Articles in case Firebase API Key / Rules fail or offline
-        const MOCK_ARTICLES = [
-            {
-                id: "mock-1",
-                title: "Pemerintah Tingkatkan Infrastruktur Digital Nasional Menuju Indonesia Emas 2045",
-                slug: "pemerintah-tingkatkan-infrastruktur-digital-nasional",
-                categoryName: "Nasional",
-                authorName: "Edy Saputra",
-                imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-                excerpt: "Langkah strategis pemerataan jaringan serat optik di seluruh pelosok tanah air terus digenjot untuk mengakselerasi pertumbuhan ekonomi berbasis teknologi.",
-                content: "<p>Pemerintah Indonesia terus berkomitmen mempercepat pembangunan infrastruktur digital secara merata dari Sabang sampai Merauke. Program perluasan sinyal 4G/5G serta jaringan serat optik bawah laut menjadi fokus utama dalam mendukung transformasi digital nasional.</p><h2>Pemerataan Akses Informasi</h2><p>Dengan akses internet yang stabil dan merata, masyarakat di daerah terpencil diharapkan dapat menikmati kemudahan layanan publik, edukasi daring, serta peluang usaha e-commerce.</p>",
-                tags: "nasional, digital, infrastruktur, teknologi",
-                status: "published",
-                isFeatured: true,
-                isBreaking: true,
-                views: 1420,
-                publishedAt: new Date(),
-                createdAt: new Date()
-            },
-            {
-                id: "mock-2",
-                title: "Dinamika Politik Nasional Jelang Pemilu: Pengamat Tekankan Pentingnya Etika Publik",
-                slug: "dinamika-politik-nasional-jelang-pemilu",
-                categoryName: "Politik",
-                authorName: "Redaksi",
-                imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80",
-                excerpt: "Para pengamat politik mengimbau seluruh elemen bangsa untuk menjaga kondusivitas serta mengutamakan wacana program kerja.",
-                content: "<p>Perkembangan peta politik di tanah air terus menyita perhatian publik. Diskusi publik mengenai etika berkampanye dan transparansi gagasan dinilai menjadi faktor krusial dalam menciptakan iklim demokrasi yang sehat.</p>",
-                tags: "politik, pemilu, opini",
-                status: "published",
-                isFeatured: false,
-                isBreaking: true,
-                views: 980,
-                publishedAt: new Date(Date.now() - 3600000 * 5),
-                createdAt: new Date()
-            },
-            {
-                id: "mock-3",
-                title: "Inovasi AI Terbaru Mampu Memprediksi Cuaca Ekstrem Secara Akurat",
-                slug: "inovasi-ai-terbaru-memprediksi-cuaca-ekstrem",
-                categoryName: "Teknologi",
-                authorName: "Logis Denis Prabowo",
-                imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
-                excerpt: "Teknologi kecerdasan buatan teranyar memungkinkan para ilmuwan memperkirakan badai dan pergeseran iklim dengan tingkat akurasi tinggi.",
-                content: "<p>Para peneliti teknologi global merilis model AI generasi baru yang mampu menganalisis jutaan titik data satelit dalam hitungan detik. Inovasi ini sangat membantu sistem mitigasi bencana alam berbasis teknologi terkini.</p>",
-                tags: "teknologi, ai, iklim",
-                status: "published",
-                isFeatured: false,
-                isBreaking: false,
-                views: 654,
-                publishedAt: new Date(Date.now() - 3600000 * 12),
-                createdAt: new Date()
-            },
-            {
-                id: "mock-4",
-                title: "Wisata Alam Indramayu Makin Diminati Wisatawan Lokal dan Mancanegara",
-                slug: "wisata-alam-indramayu-makin-diminati-wisatawan",
-                categoryName: "Wisata",
-                authorName: "Edy Saputra",
-                imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
-                excerpt: "Keindahan pesisir pantai serta destinasi ekowisata mangrove di Indramayu menjadi daya tarik baru liburan keluarga.",
-                content: "<p>Sektor pariwisata daerah terus tumbuh pesat seiring peningkatan fasilitas pendukung serta promosi digital yang gencar. Pantai dan kawasan konservasi mangrove Indramayu kini menjadi salah satu destinasi favorit di Jawa Barat.</p>",
-                tags: "wisata, indramayu, pantai, liburan",
-                status: "published",
-                isFeatured: false,
-                isBreaking: false,
-                views: 1120,
-                publishedAt: new Date(Date.now() - 3600000 * 24),
-                createdAt: new Date()
-            }
-        ];
+        const MOCK_ARTICLES = [];
 
         // Safe Article Fetcher (Avoids Firestore Composite Index Requirements by filtering/sorting in memory)
         async function fetchAllArticlesSafe() {
