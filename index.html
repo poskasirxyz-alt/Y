@@ -1,0 +1,1660 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="dynamic-title">ZONA NETIZEN - Portal Berita Terpercaya & Teraktual</title>
+    
+    <!-- Dynamic SEO & Meta Tags -->
+    <meta id="meta-desc" name="description" content="Portal berita Indonesia terkini, independen, tajam, dan menyajikan berita Nasional, Politik, Viral, Ekonomi, Teknologi, dan Wisata.">
+    <meta id="meta-keywords" name="keywords" content="berita indonesia, zona netizen, berita viral, politik, nasional, ekonomi, teknologi, wisata">
+    <meta name="robots" content="index, follow">
+    <link id="canonical-url" rel="canonical" href="https://zonanetizen.xyz">
+
+    <!-- Open Graph / Social Media -->
+    <meta id="og-title" property="og:title" content="ZONA NETIZEN - Portal Berita Terpercaya">
+    <meta id="og-desc" property="og:description" content="Portal berita Indonesia terkini, independen, dan terpercaya.">
+    <meta id="og-image" property="og:image" content="https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg">
+    <meta id="og-url" property="og:url" content="https://zonanetizen.xyz">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta id="tw-title" name="twitter:title" content="ZONA NETIZEN">
+    <meta id="tw-desc" name="twitter:description" content="Portal berita Indonesia terkini dan akurat.">
+    <meta id="tw-image" name="twitter:image" content="https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg">
+    <link rel="apple-touch-icon" href="https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#D32F2F',
+                            darkred: '#9A0007',
+                            navy: '#0F172A',
+                            accent: '#2563EB',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        serif: ['Merriweather', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Inter & Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #FFFFFF; color: #1E293B; }
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; font-size: 1.05rem; }
+        .article-body h2 { font-size: 1.5rem; font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #0F172A; }
+        .article-body h3 { font-size: 1.25rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #0F172A; }
+        .article-body blockquote { border-left: 4px solid #D32F2F; padding-left: 1rem; font-style: italic; color: #475569; margin: 1.25rem 0; }
+        .no-shadow { box-shadow: none !important; }
+        /* Interstitial Ad Overlay Modal */
+        #interstitial-modal { z-index: 9999; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <!-- TOP HEADER / NAV -->
+    <header class="border-b border-slate-200 bg-white sticky top-0 z-40">
+        <!-- Date Bar -->
+        <div class="bg-slate-900 text-white text-xs py-1.5 px-4">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <span id="current-date">Selasa, 11 Agustus 2026</span>
+                <div class="flex items-center space-x-4">
+                    <a href="#redaksi" class="hover:underline text-slate-300">Redaksi</a>
+                    <a href="#contact" class="hover:underline text-slate-300">Kontak</a>
+                    <a href="#admin/login" class="hover:underline text-amber-400 font-semibold">Admin Panel</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Branding Header -->
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-red-600 focus:outline-none" aria-label="Buka Menu">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+                <a href="#index" class="flex items-center space-x-3">
+                    <img src="https://cdn.phototourl.com/member/2026-08-06-dd5c6385-3c9e-4ee1-9751-df2a871bde54.png" alt="ZONA NETIZEN Logo" class="h-10 md:h-12 w-auto object-contain" onerror="this.src='https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg'">
+                    <div class="flex flex-col">
+                        <span class="text-xl md:text-2xl font-black tracking-tight text-slate-900 leading-none">ZONA<span class="text-red-600">NETIZEN</span></span>
+                        <span class="text-[10px] text-slate-500 font-medium tracking-widest uppercase mt-0.5">Portal Berita Indonesia</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Search Bar Trigger / Action -->
+            <div class="hidden md:flex items-center space-x-2">
+                <form onsubmit="handleSearch(event)" class="relative">
+                    <input type="text" id="desktop-search-input" placeholder="Cari berita..." class="w-64 pl-9 pr-4 py-1.5 border border-slate-300 rounded-md text-sm focus:outline-none focus:border-red-600">
+                    <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </form>
+            </div>
+        </div>
+
+        <!-- Category Navigation Menu -->
+        <nav class="border-t border-slate-200 bg-slate-50 hidden md:block">
+            <div class="max-w-7xl mx-auto px-4 flex space-x-8 text-sm font-semibold overflow-x-auto">
+                <a href="#index" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Beranda</a>
+                <a href="#kategori/nasional" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Nasional</a>
+                <a href="#kategori/politik" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Politik</a>
+                <a href="#kategori/viral" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Viral</a>
+                <a href="#kategori/ekonomi" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Ekonomi</a>
+                <a href="#kategori/teknologi" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Teknologi</a>
+                <a href="#kategori/wisata" class="py-3 text-slate-800 hover:text-red-600 border-b-2 border-transparent hover:border-red-600 transition-colors">Wisata</a>
+            </div>
+        </nav>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-slate-900 bg-opacity-50 z-50">
+            <div class="bg-white w-72 h-full p-5 flex flex-col justify-between shadow-xl">
+                <div>
+                    <div class="flex justify-between items-center mb-6 pb-3 border-b border-slate-200">
+                        <a href="#index" class="flex items-center space-x-2">
+                            <img src="https://cdn.phototourl.com/member/2026-08-06-dd5c6385-3c9e-4ee1-9751-df2a871bde54.png" alt="Logo" class="h-8 w-auto">
+                            <span class="font-bold text-slate-900">ZONA NETIZEN</span>
+                        </a>
+                        <button id="close-mobile-menu" class="text-slate-500 hover:text-slate-800"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+                    </div>
+
+                    <form onsubmit="handleSearchMobile(event)" class="mb-4">
+                        <input type="text" id="mobile-search-input" placeholder="Cari berita..." class="w-full px-3 py-2 border border-slate-300 rounded text-sm focus:outline-none focus:border-red-600">
+                    </form>
+
+                    <ul class="space-y-3 font-medium text-slate-700">
+                        <li><a href="#index" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Beranda</a></li>
+                        <li><a href="#kategori/nasional" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Nasional</a></li>
+                        <li><a href="#kategori/politik" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Politik</a></li>
+                        <li><a href="#kategori/viral" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Viral</a></li>
+                        <li><a href="#kategori/ekonomi" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Ekonomi</a></li>
+                        <li><a href="#kategori/teknologi" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Teknologi</a></li>
+                        <li><a href="#kategori/wisata" class="mobile-nav-item block py-1.5 hover:text-red-600 border-b border-slate-100">Wisata</a></li>
+                    </ul>
+                </div>
+
+                <div class="pt-4 border-t border-slate-200 text-xs text-slate-500">
+                    <a href="#admin/login" class="block mb-2 font-semibold text-red-600">Akses Admin Panel</a>
+                    <p>© ZONA NETIZEN</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREAKING NEWS TICKER -->
+    <div id="breaking-news-wrapper" class="bg-red-600 text-white border-b border-red-700 hidden">
+        <div class="max-w-7xl mx-auto px-4 py-2 flex items-center">
+            <span class="bg-slate-900 text-white text-xs font-black px-2.5 py-1 rounded uppercase tracking-wider mr-3 whitespace-nowrap flex items-center">
+                <span class="w-2 h-2 rounded-full bg-red-500 animate-ping mr-1.5"></span>
+                BREAKING
+            </span>
+            <div class="overflow-hidden whitespace-nowrap text-xs md:text-sm font-medium w-full" id="breaking-news-content">
+                <!-- Injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN ROUTER CONTAINER -->
+    <main id="app-content" class="max-w-7xl mx-auto px-4 py-6 flex-grow w-full">
+        <!-- Spinner Loading State -->
+        <div id="main-loader" class="flex flex-col items-center justify-center py-20">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600 mb-4"></div>
+            <p class="text-sm text-slate-500 font-medium">Memuat konten ZONA NETIZEN...</p>
+        </div>
+    </main>
+
+    <!-- INTERSTITIAL AD MODAL OVERLAY -->
+    <div id="interstitial-modal" class="fixed inset-0 bg-slate-900 bg-opacity-80 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-lg w-full p-5 border border-slate-200 text-center relative">
+            <div class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-2">Sponsor / Iklan</div>
+            <div id="interstitial-ad-content" class="min-h-[250px] flex items-center justify-center bg-slate-50 border border-dashed border-slate-300 rounded mb-4 overflow-hidden">
+                <!-- Ad content -->
+            </div>
+            <p class="text-xs text-slate-500 mb-4">Mendukung keberlanjutan pers independen ZONA NETIZEN</p>
+            <button id="close-interstitial-btn" onclick="proceedToArticle()" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 px-4 rounded transition">
+                Lanjut Membaca Artikel
+            </button>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-300 border-t border-slate-800 mt-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Col 1: About -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-2">
+                    <img src="https://cdn.phototourl.com/member/2026-08-06-dd5c6385-3c9e-4ee1-9751-df2a871bde54.png" alt="Logo" class="h-8 w-auto brightness-200">
+                    <span class="text-xl font-black text-white">ZONA NETIZEN</span>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    Portal berita Indonesia yang menyajikan informasi independen, terpercaya, cepat, dan objektif seputar peristiwa Nasional, Politik, Ekonomi, Teknologi, Wisata, dan hal Viral.
+                </p>
+                <div class="text-xs text-slate-400">
+                    Domain Resmi: <a href="https://zonanetizen.xyz" class="text-red-400 hover:underline">https://zonanetizen.xyz</a>
+                </div>
+            </div>
+
+            <!-- Col 2: Categories -->
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest border-b border-slate-800 pb-2">Kategori Berita</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#kategori/nasional" class="hover:text-white transition">Nasional</a></li>
+                    <li><a href="#kategori/politik" class="hover:text-white transition">Politik</a></li>
+                    <li><a href="#kategori/viral" class="hover:text-white transition">Viral</a></li>
+                    <li><a href="#kategori/ekonomi" class="hover:text-white transition">Ekonomi</a></li>
+                    <li><a href="#kategori/teknologi" class="hover:text-white transition">Teknologi</a></li>
+                    <li><a href="#kategori/wisata" class="hover:text-white transition">Wisata</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Halaman Informasi / Legal -->
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest border-b border-slate-800 pb-2">Informasi & Hukum</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#redaksi" class="hover:text-white transition">Tim Redaksi</a></li>
+                    <li><a href="#legal" class="hover:text-white transition">Legal Page</a></li>
+                    <li><a href="#privacy" class="hover:text-white transition">Privacy & Policy</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">Kontak & Alamat</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Tim Redaksi Ringkas -->
+            <div>
+                <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-widest border-b border-slate-800 pb-2">Redaksi Utama</h4>
+                <div class="text-xs space-y-2 text-slate-400">
+                    <p><strong class="text-slate-200">Penanggung Jawab:</strong><br>Edy Saputra</p>
+                    <p><strong class="text-slate-200">Web Developer:</strong><br>Logis Denis Prabowo</p>
+                    <p><strong class="text-slate-200">Alamat:</strong><br>Indramayu, Jawa Barat, Indonesia</p>
+                    <p><strong class="text-slate-200">Email:</strong><br>zonanetizen.xyz@gmail.com</p>
+                    <p><strong class="text-slate-200">Telepon / Whatsapp:</strong><br>0823-7947-4173</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright -->
+        <div class="bg-slate-950 border-t border-slate-800/80 py-4 text-center text-xs text-slate-500">
+            <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+                <span>© 2026 ZONA NETIZEN (zonanetizen.xyz). All Rights Reserved.</span>
+                <span class="mt-2 md:mt-0"><a href="#admin/login" class="hover:text-slate-300">Login Admin Portal</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIREBASE MODULE SCRIPT -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { 
+            getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged 
+        } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+        import { 
+            getFirestore, collection, doc, getDoc, getDocs, setDoc, addDoc, updateDoc, deleteDoc, 
+            query, where, orderBy, limit, serverTimestamp, increment 
+        } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+        // FIREBASE CONFIGURATION
+        const firebaseConfig = {
+  apiKey: "AIzaSyDRLSUlUUm9rZpo5Kc_T5uHs_4ZyG0UZeQ",
+  authDomain: "yuttyy-b0da0.firebaseapp.com",
+  projectId: "yuttyy-b0da0",
+  storageBucket: "yuttyy-b0da0.firebasestorage.app",
+  messagingSenderId: "737039601353",
+  appId: "1:737039601353:web:c0e95f8e9c9e6c95d34718"
+};
+
+        const ALLOWED_ADMIN_EMAIL = "logisshope@gmail.com";
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Global State
+        let currentUser = null;
+        let pendingArticleSlug = null;
+        const DEFAULT_LOGO_SQUARE = "https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg";
+        const DEFAULT_LOGO_BANNER = "https://cdn.phototourl.com/member/2026-08-06-dd5c6385-3c9e-4ee1-9751-df2a871bde54.png";
+
+        // Category Standard List
+        const DEFAULT_CATEGORIES = [
+            { name: "Nasional", slug: "nasional" },
+            { name: "Politik", slug: "politik" },
+            { name: "Viral", slug: "viral" },
+            { name: "Ekonomi", slug: "ekonomi" },
+            { name: "Teknologi", slug: "teknologi" },
+            { name: "Wisata", slug: "wisata" }
+        ];
+
+        // Fallback Mock Articles in case Firebase API Key / Rules fail or offline
+        const MOCK_ARTICLES = [
+            {
+                id: "mock-1",
+                title: "Pemerintah Tingkatkan Infrastruktur Digital Nasional Menuju Indonesia Emas 2045",
+                slug: "pemerintah-tingkatkan-infrastruktur-digital-nasional",
+                categoryName: "Nasional",
+                authorName: "Edy Saputra",
+                imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+                excerpt: "Langkah strategis pemerataan jaringan serat optik di seluruh pelosok tanah air terus digenjot untuk mengakselerasi pertumbuhan ekonomi berbasis teknologi.",
+                content: "<p>Pemerintah Indonesia terus berkomitmen mempercepat pembangunan infrastruktur digital secara merata dari Sabang sampai Merauke. Program perluasan sinyal 4G/5G serta jaringan serat optik bawah laut menjadi fokus utama dalam mendukung transformasi digital nasional.</p><h2>Pemerataan Akses Informasi</h2><p>Dengan akses internet yang stabil dan merata, masyarakat di daerah terpencil diharapkan dapat menikmati kemudahan layanan publik, edukasi daring, serta peluang usaha e-commerce.</p>",
+                tags: "nasional, digital, infrastruktur, teknologi",
+                status: "published",
+                isFeatured: true,
+                isBreaking: true,
+                views: 1420,
+                publishedAt: new Date(),
+                createdAt: new Date()
+            },
+            {
+                id: "mock-2",
+                title: "Dinamika Politik Nasional Jelang Pemilu: Pengamat Tekankan Pentingnya Etika Publik",
+                slug: "dinamika-politik-nasional-jelang-pemilu",
+                categoryName: "Politik",
+                authorName: "Redaksi",
+                imageUrl: "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?auto=format&fit=crop&w=800&q=80",
+                excerpt: "Para pengamat politik mengimbau seluruh elemen bangsa untuk menjaga kondusivitas serta mengutamakan wacana program kerja.",
+                content: "<p>Perkembangan peta politik di tanah air terus menyita perhatian publik. Diskusi publik mengenai etika berkampanye dan transparansi gagasan dinilai menjadi faktor krusial dalam menciptakan iklim demokrasi yang sehat.</p>",
+                tags: "politik, pemilu, opini",
+                status: "published",
+                isFeatured: false,
+                isBreaking: true,
+                views: 980,
+                publishedAt: new Date(Date.now() - 3600000 * 5),
+                createdAt: new Date()
+            },
+            {
+                id: "mock-3",
+                title: "Inovasi AI Terbaru Mampu Memprediksi Cuaca Ekstrem Secara Akurat",
+                slug: "inovasi-ai-terbaru-memprediksi-cuaca-ekstrem",
+                categoryName: "Teknologi",
+                authorName: "Logis Denis Prabowo",
+                imageUrl: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80",
+                excerpt: "Teknologi kecerdasan buatan teranyar memungkinkan para ilmuwan memperkirakan badai dan pergeseran iklim dengan tingkat akurasi tinggi.",
+                content: "<p>Para peneliti teknologi global merilis model AI generasi baru yang mampu menganalisis jutaan titik data satelit dalam hitungan detik. Inovasi ini sangat membantu sistem mitigasi bencana alam berbasis teknologi terkini.</p>",
+                tags: "teknologi, ai, iklim",
+                status: "published",
+                isFeatured: false,
+                isBreaking: false,
+                views: 654,
+                publishedAt: new Date(Date.now() - 3600000 * 12),
+                createdAt: new Date()
+            },
+            {
+                id: "mock-4",
+                title: "Wisata Alam Indramayu Makin Diminati Wisatawan Lokal dan Mancanegara",
+                slug: "wisata-alam-indramayu-makin-diminati-wisatawan",
+                categoryName: "Wisata",
+                authorName: "Edy Saputra",
+                imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80",
+                excerpt: "Keindahan pesisir pantai serta destinasi ekowisata mangrove di Indramayu menjadi daya tarik baru liburan keluarga.",
+                content: "<p>Sektor pariwisata daerah terus tumbuh pesat seiring peningkatan fasilitas pendukung serta promosi digital yang gencar. Pantai dan kawasan konservasi mangrove Indramayu kini menjadi salah satu destinasi favorit di Jawa Barat.</p>",
+                tags: "wisata, indramayu, pantai, liburan",
+                status: "published",
+                isFeatured: false,
+                isBreaking: false,
+                views: 1120,
+                publishedAt: new Date(Date.now() - 3600000 * 24),
+                createdAt: new Date()
+            }
+        ];
+
+        // Safe Article Fetcher (Avoids Firestore Composite Index Requirements by filtering/sorting in memory)
+        async function fetchAllArticlesSafe() {
+            try {
+                const snap = await getDocs(collection(db, "articles"));
+                if (snap.empty) return MOCK_ARTICLES;
+                
+                const list = [];
+                snap.forEach(docSnap => {
+                    list.push({ id: docSnap.id, ...docSnap.data() });
+                });
+                
+                // Client side sort by publishedAt / createdAt desc
+                list.sort((a, b) => {
+                    const timeA = a.publishedAt?.seconds ? a.publishedAt.seconds * 1000 : new Date(a.publishedAt || 0).getTime();
+                    const timeB = b.publishedAt?.seconds ? b.publishedAt.seconds * 1000 : new Date(b.publishedAt || 0).getTime();
+                    return timeB - timeA;
+                });
+
+                return list.length > 0 ? list : MOCK_ARTICLES;
+            } catch (err) {
+                console.warn("Firestore fetch failed (permissions/API key issue). Falling back to mock dataset:", err.message);
+                return MOCK_ARTICLES;
+            }
+        }
+
+        // Format Date Helper
+        function formatDate(timestamp) {
+            if (!timestamp) return "-";
+            const date = timestamp.toDate ? timestamp.toDate() : new Date(timestamp);
+            return new Intl.DateTimeFormat('id-ID', {
+                weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+            }).format(date);
+        }
+
+        // Slugify Helper
+        function slugify(text) {
+            return text.toString().toLowerCase().trim()
+                .replace(/\s+/g, '-')           // Replace spaces with -
+                .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+                .replace(/\-\-+/g, '-');        // Replace multiple - with single -
+        }
+
+        // Auth Listener
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                if (user.email === ALLOWED_ADMIN_EMAIL) {
+                    currentUser = user;
+                } else {
+                    signOut(auth);
+                    currentUser = null;
+                }
+            } else {
+                currentUser = null;
+            }
+            // Trigger router refresh on auth state change if inside admin route
+            if (window.location.hash.startsWith('#admin')) {
+                handleRouting();
+            }
+        });
+
+        // Initialize App & Event Listeners
+        window.addEventListener('DOMContentLoaded', () => {
+            updateDateHeader();
+            initMobileMenu();
+            window.addEventListener('hashchange', handleRouting);
+            loadBreakingNews();
+            handleRouting();
+        });
+
+        function updateDateHeader() {
+            const now = new Date();
+            const dateStr = new Intl.DateTimeFormat('id-ID', {
+                weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+            }).format(now);
+            const el = document.getElementById('current-date');
+            if (el) el.textContent = dateStr;
+        }
+
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const closeBtn = document.getElementById('close-mobile-menu');
+            const menu = document.getElementById('mobile-menu');
+            const items = document.querySelectorAll('.mobile-nav-item');
+
+            if (btn && menu) {
+                btn.addEventListener('click', () => menu.classList.remove('hidden'));
+            }
+            if (closeBtn && menu) {
+                closeBtn.addEventListener('click', () => menu.classList.add('hidden'));
+            }
+            items.forEach(item => {
+                item.addEventListener('click', () => menu.classList.add('hidden'));
+            });
+        }
+
+        // SEARCH HANDLERS
+        window.handleSearch = function(e) {
+            e.preventDefault();
+            const q = document.getElementById('desktop-search-input').value.trim();
+            if (q) window.location.hash = `#search?q=${encodeURIComponent(q)}`;
+        };
+
+        window.handleSearchMobile = function(e) {
+            e.preventDefault();
+            const q = document.getElementById('mobile-search-input').value.trim();
+            if (q) {
+                document.getElementById('mobile-menu').classList.add('hidden');
+                window.location.hash = `#search?q=${encodeURIComponent(q)}`;
+            }
+        };
+
+        // BREAKING NEWS TICKER
+        async function loadBreakingNews() {
+            try {
+                const articles = await fetchAllArticlesSafe();
+                const breakingList = articles.filter(a => a.status === 'published' && a.isBreaking).slice(0, 5);
+                const wrapper = document.getElementById('breaking-news-wrapper');
+                const content = document.getElementById('breaking-news-content');
+
+                if (breakingList.length > 0) {
+                    let itemsHtml = breakingList.map(data => {
+                        return `<a href="#berita/${data.slug}" class="hover:underline mr-8 text-white">${data.title}</a>`;
+                    }).join('<span class="mx-3 text-red-300">•</span>');
+                    content.innerHTML = itemsHtml;
+                    wrapper.classList.remove('hidden');
+                } else {
+                    wrapper.classList.add('hidden');
+                }
+            } catch (err) {
+                console.warn("Breaking news query error:", err);
+            }
+        }
+
+        // ROUTER ENGINE
+        async function handleRouting() {
+            const hash = window.location.hash || '#index';
+            const app = document.getElementById('app-content');
+            
+            // Scroll to top on route change
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            // Admin Router Guard
+            if (hash.startsWith('#admin')) {
+                if (hash === '#admin/login') {
+                    renderAdminLogin();
+                    return;
+                }
+                if (!currentUser) {
+                    window.location.hash = '#admin/login';
+                    return;
+                }
+                if (hash === '#admin') renderAdminDashboard();
+                else if (hash === '#admin/articles') renderAdminArticles();
+                else if (hash === '#admin/articles/new') renderAdminArticleForm();
+                else if (hash.startsWith('#admin/articles/edit/')) {
+                    const id = hash.replace('#admin/articles/edit/', '');
+                    renderAdminArticleForm(id);
+                }
+                else if (hash === '#admin/categories') renderAdminCategories();
+                else if (hash === '#admin/ads') renderAdminAds();
+                else if (hash === '#admin/settings') renderAdminSettings();
+                return;
+            }
+
+            // Public Router
+            if (hash === '#index' || hash === '#') {
+                renderHomepage();
+            } else if (hash.startsWith('#kategori/')) {
+                const catSlug = hash.replace('#kategori/', '');
+                renderCategoryPage(catSlug);
+            } else if (hash.startsWith('#berita/')) {
+                const slug = hash.replace('#berita/', '');
+                checkInterstitialAndRender(slug);
+            } else if (hash.startsWith('#search')) {
+                const urlParams = new URLSearchParams(hash.split('?')[1] || '');
+                const q = urlParams.get('q') || '';
+                renderSearchPage(q);
+            } else if (hash === '#redaksi') {
+                renderRedaksiPage();
+            } else if (hash === '#privacy') {
+                renderPrivacyPage();
+            } else if (hash === '#legal') {
+                renderLegalPage();
+            } else if (hash === '#contact') {
+                renderContactPage();
+            } else {
+                renderNotFound();
+            }
+        }
+
+        // FETCH ACTIVE ADS
+        async function fetchActiveAd(position) {
+            try {
+                const snap = await getDocs(collection(db, "ads"));
+                if (snap.empty) return null;
+                const ads = snap.docs
+                    .map(doc => ({ id: doc.id, ...doc.data() }))
+                    .filter(a => a.position === position && a.active === true);
+                if (ads.length === 0) return null;
+                // Pick random active ad
+                return ads[Math.floor(Math.random() * ads.length)];
+            } catch (err) {
+                // Silently return null on permissions or connection error
+                return null;
+            }
+        }
+
+        // INTERSTITIAL AD LOGIC FOR READING ARTICLE
+        async function checkInterstitialAndRender(slug) {
+            pendingArticleSlug = slug;
+            const ad = await fetchActiveAd('article_interstitial');
+            if (ad) {
+                const modal = document.getElementById('interstitial-modal');
+                const content = document.getElementById('interstitial-ad-content');
+                content.innerHTML = `
+                    <a href="${ad.targetUrl}" target="_blank" rel="noopener noreferrer" class="block w-full">
+                        <img src="${ad.imageUrl}" alt="${ad.name}" class="max-h-80 w-full object-contain mx-auto">
+                    </a>
+                `;
+                modal.classList.remove('hidden');
+            } else {
+                renderArticleDetail(slug);
+            }
+        }
+
+        window.proceedToArticle = function() {
+            document.getElementById('interstitial-modal').classList.add('hidden');
+            if (pendingArticleSlug) {
+                renderArticleDetail(pendingArticleSlug);
+            }
+        };
+
+        // UI HELPER: ARTICLE CARD
+        function createArticleCard(item) {
+            const pubDate = formatDate(item.publishedAt);
+            return `
+                <article class="bg-white border border-slate-200 rounded-md overflow-hidden flex flex-col justify-between transition hover:border-slate-400">
+                    <div>
+                        <a href="#berita/${item.slug}" class="block aspect-video overflow-hidden bg-slate-100 relative">
+                            <img src="${item.imageUrl || DEFAULT_LOGO_SQUARE}" alt="${item.title}" loading="lazy" class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" onerror="this.src='${DEFAULT_LOGO_SQUARE}'">
+                            <span class="absolute top-2 left-2 bg-red-600 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">
+                                ${item.categoryName || 'Berita'}
+                            </span>
+                        </a>
+                        <div class="p-4">
+                            <a href="#berita/${item.slug}" class="block">
+                                <h3 class="font-bold text-slate-900 text-base leading-snug line-clamp-2 hover:text-red-600 mb-2">${item.title}</h3>
+                            </a>
+                            <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-3">${item.excerpt || ''}</p>
+                        </div>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 text-[11px] text-slate-500 border-t border-slate-100 flex justify-between items-center mt-auto">
+                        <span>${item.authorName || 'Redaksi'}</span>
+                        <div class="flex items-center space-x-2">
+                            <span>${pubDate}</span>
+                            <span>•</span>
+                            <span>${item.views || 0} views</span>
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        // ==========================================
+        // PUBLIC PAGES
+        // ==========================================
+
+        // 1. HOMEPAGE
+        async function renderHomepage() {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `<div class="animate-pulse text-center py-10 text-slate-400">Memuat berita terbaru...</div>`;
+
+            // Reset Meta Tags for Homepage
+            document.title = "ZONA NETIZEN - Portal Berita Terpercaya & Teraktual";
+
+            try {
+                // Fetch Homepage Ad
+                const homeAd = await fetchActiveAd('homepage');
+
+                // Query Articles safely avoiding composite indexes
+                const allArticles = await fetchAllArticlesSafe();
+                const articles = allArticles.filter(a => a.status === 'published');
+
+                if (articles.length === 0) {
+                    app.innerHTML = `
+                        <div class="text-center py-20 max-w-md mx-auto border border-dashed border-slate-300 rounded-lg p-8">
+                            <svg class="w-12 h-12 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path></svg>
+                            <h3 class="text-base font-bold text-slate-700 mb-1">Belum Ada Berita</h3>
+                            <p class="text-xs text-slate-500">Belum ada berita yang dipublikasikan. Silakan cek kembali nanti atau tambahkan berita melalui Admin Panel.</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // Separate Featured Hero Article
+                let heroArticle = articles.find(a => a.isFeatured) || articles[0];
+                let normalArticles = articles.filter(a => a.id !== heroArticle.id);
+
+                // Top Views / Trending
+                let trendingArticles = [...articles].sort((a, b) => (b.views || 0) - (a.views || 0)).slice(0, 5);
+
+                let homeAdHtml = '';
+                if (homeAd) {
+                    homeAdHtml = `
+                        <div class="my-6 p-2 border border-slate-200 bg-slate-50 rounded text-center">
+                            <span class="text-[10px] text-slate-400 font-semibold tracking-widest uppercase block mb-1">Iklan</span>
+                            <a href="${homeAd.targetUrl}" target="_blank" rel="noopener noreferrer">
+                                <img src="${homeAd.imageUrl}" alt="${homeAd.name}" class="max-h-32 mx-auto object-contain">
+                            </a>
+                        </div>
+                    `;
+                }
+
+                let html = `
+                    <div class="space-y-8">
+                        <!-- HERO SECTION -->
+                        <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                            <!-- Hero Main (2 cols) -->
+                            <div class="lg:col-span-2 bg-white border border-slate-200 rounded-md overflow-hidden flex flex-col justify-between">
+                                <a href="#berita/${heroArticle.slug}" class="block relative aspect-video bg-slate-100 overflow-hidden">
+                                    <img src="${heroArticle.imageUrl || DEFAULT_LOGO_SQUARE}" alt="${heroArticle.title}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" onerror="this.src='${DEFAULT_LOGO_SQUARE}'">
+                                    <span class="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
+                                        ${heroArticle.categoryName || 'Utama'}
+                                    </span>
+                                </a>
+                                <div class="p-6">
+                                    <a href="#berita/${heroArticle.slug}">
+                                        <h1 class="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight hover:text-red-600 mb-3">${heroArticle.title}</h1>
+                                    </a>
+                                    <p class="text-sm text-slate-600 leading-relaxed mb-4">${heroArticle.excerpt || ''}</p>
+                                    <div class="flex items-center text-xs text-slate-500 space-x-4 border-t border-slate-100 pt-3">
+                                        <span class="font-semibold text-slate-800">${heroArticle.authorName || 'Redaksi'}</span>
+                                        <span>•</span>
+                                        <span>${formatDate(heroArticle.publishedAt)}</span>
+                                        <span>•</span>
+                                        <span>${heroArticle.views || 0} dibaca</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Sidebar Trending (1 col) -->
+                            <div class="bg-slate-50 border border-slate-200 rounded-md p-5 flex flex-col">
+                                <div class="border-b-2 border-red-600 pb-2 mb-4 flex justify-between items-center">
+                                    <h2 class="font-extrabold text-slate-900 uppercase text-xs tracking-widest">BERITA TRENDING</h2>
+                                    <span class="text-xs text-red-600 font-bold">TOP 5</span>
+                                </div>
+                                <div class="space-y-4 flex-grow">
+                                    ${trendingArticles.map((item, idx) => `
+                                        <div class="flex items-start space-x-3 pb-3 border-b border-slate-200 last:border-0">
+                                            <span class="text-2xl font-black text-slate-300 w-6 text-center leading-none">${idx + 1}</span>
+                                            <div class="flex-grow">
+                                                <a href="#kategori/${slugify(item.categoryName || 'umum')}" class="text-[10px] font-bold text-red-600 uppercase tracking-wider">${item.categoryName || 'Umum'}</a>
+                                                <a href="#berita/${item.slug}" class="block font-bold text-xs text-slate-800 hover:text-red-600 leading-snug line-clamp-2 mt-0.5">${item.title}</a>
+                                                <span class="text-[10px] text-slate-400 mt-1 block">${item.views || 0} views</span>
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            </div>
+                        </section>
+
+                        ${homeAdHtml}
+
+                        <!-- LATEST NEWS GRID -->
+                        <section>
+                            <div class="border-b-2 border-slate-900 pb-2 mb-6 flex justify-between items-center">
+                                <h2 class="font-black text-lg md:text-xl text-slate-900 uppercase tracking-tight">BERITA TERBARU</h2>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                ${normalArticles.map(a => createArticleCard(a)).join('')}
+                            </div>
+                        </section>
+                    </div>
+                `;
+                app.innerHTML = html;
+            } catch (err) {
+                console.error("Homepage error:", err);
+                app.innerHTML = `<div class="p-4 bg-red-50 text-red-700 text-sm border border-red-200 rounded">Gagal memuat berita. Terjadi masalah pada koneksi database.</div>`;
+            }
+        }
+
+        // 2. CATEGORY PAGE
+        async function renderCategoryPage(catSlug) {
+            const app = document.getElementById('app-content');
+            const catName = catSlug.charAt(0).toUpperCase() + catSlug.slice(1);
+            document.title = `${catName} - ZONA NETIZEN`;
+
+            app.innerHTML = `<div class="animate-pulse text-center py-10 text-slate-400">Memuat kategori ${catName}...</div>`;
+
+            try {
+                const allArticles = await fetchAllArticlesSafe();
+                const articles = allArticles.filter(a => a.status === "published" && a.categoryName?.toLowerCase() === catName.toLowerCase());
+
+                let contentHtml = '';
+                if (articles.length === 0) {
+                    contentHtml = `
+                        <div class="text-center py-16 border border-dashed border-slate-300 rounded-md p-6">
+                            <p class="text-sm text-slate-500">Belum ada berita dalam kategori <strong>${catName}</strong>.</p>
+                        </div>
+                    `;
+                } else {
+                    contentHtml = `
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            ${articles.map(a => createArticleCard(a)).join('')}
+                        </div>
+                    `;
+                }
+
+                app.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="border-b border-slate-200 pb-4">
+                            <span class="text-xs text-slate-400 font-semibold uppercase tracking-wider">Kategori Berita</span>
+                            <h1 class="text-2xl md:text-3xl font-black text-slate-900 uppercase tracking-tight">${catName}</h1>
+                        </div>
+                        ${contentHtml}
+                    </div>
+                `;
+            } catch (err) {
+                console.error("Category page error:", err);
+                app.innerHTML = `<div class="p-4 bg-red-50 text-red-700 text-sm border border-red-200 rounded">Gagal memuat berita kategori.</div>`;
+            }
+        }
+
+        // 3. ARTICLE DETAIL PAGE
+        async function renderArticleDetail(slug) {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `<div class="animate-pulse text-center py-10 text-slate-400">Memuat artikel berita...</div>`;
+
+            try {
+                const allArticles = await fetchAllArticlesSafe();
+                const article = allArticles.find(a => a.slug === slug && a.status === "published");
+
+                if (!article) {
+                    renderNotFound();
+                    return;
+                }
+
+                // Update View Counter (Anti-spam key)
+                const viewKey = `viewed_${article.id}`;
+                if (!sessionStorage.getItem(viewKey) && !article.id.startsWith('mock-')) {
+                    sessionStorage.setItem(viewKey, 'true');
+                    updateDoc(doc(db, "articles", article.id), {
+                        views: increment(1)
+                    }).catch(e => console.error("View update error:", e));
+                    article.views = (article.views || 0) + 1;
+                }
+
+                // Dynamic SEO Tags
+                document.title = `${article.title} - ZONA NETIZEN`;
+                document.getElementById('meta-desc').setAttribute('content', article.excerpt || article.title);
+                document.getElementById('og-title').setAttribute('content', article.title);
+                document.getElementById('og-desc').setAttribute('content', article.excerpt || article.title);
+                document.getElementById('og-image').setAttribute('content', article.imageUrl || DEFAULT_LOGO_SQUARE);
+
+                // Fetch Top / Bottom Ads
+                const topAd = await fetchActiveAd('article_top');
+                const bottomAd = await fetchActiveAd('article_bottom');
+
+                let topAdHtml = topAd ? `
+                    <div class="my-4 p-2 border border-slate-200 bg-slate-50 rounded text-center">
+                        <span class="text-[9px] text-slate-400 uppercase font-semibold">Iklan Sponsor</span>
+                        <a href="${topAd.targetUrl}" target="_blank" rel="noopener noreferrer">
+                            <img src="${topAd.imageUrl}" class="max-h-24 mx-auto object-contain">
+                        </a>
+                    </div>
+                ` : '';
+
+                let bottomAdHtml = bottomAd ? `
+                    <div class="my-6 p-2 border border-slate-200 bg-slate-50 rounded text-center">
+                        <span class="text-[9px] text-slate-400 uppercase font-semibold">Iklan Sponsor</span>
+                        <a href="${bottomAd.targetUrl}" target="_blank" rel="noopener noreferrer">
+                            <img src="${bottomAd.imageUrl}" class="max-h-32 mx-auto object-contain">
+                        </a>
+                    </div>
+                ` : '';
+
+                app.innerHTML = `
+                    <article class="max-w-4xl mx-auto space-y-6">
+                        <!-- Breadcrumb -->
+                        <nav class="text-xs text-slate-500 space-x-2">
+                            <a href="#index" class="hover:underline">Beranda</a>
+                            <span>/</span>
+                            <a href="#kategori/${slugify(article.categoryName || 'umum')}" class="hover:underline text-red-600 font-semibold">${article.categoryName || 'Umum'}</a>
+                        </nav>
+
+                        <!-- Header Info -->
+                        <header class="space-y-3">
+                            <h1 class="text-2xl md:text-4xl font-black text-slate-900 leading-tight">${article.title}</h1>
+                            <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500 border-y border-slate-200 py-3">
+                                <div class="flex items-center space-x-3">
+                                    <span class="font-bold text-slate-800">Oleh: ${article.authorName || 'Redaksi'}</span>
+                                    <span>•</span>
+                                    <span>${formatDate(article.publishedAt)}</span>
+                                </div>
+                                <div>
+                                    <span class="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-full font-medium">${article.views || 0} Views</span>
+                                </div>
+                            </div>
+                        </header>
+
+                        ${topAdHtml}
+
+                        <!-- Image Banner -->
+                        <figure class="space-y-2">
+                            <img src="${article.imageUrl || DEFAULT_LOGO_SQUARE}" alt="${article.title}" class="w-full max-h-[480px] object-cover rounded-md border border-slate-200" onerror="this.src='${DEFAULT_LOGO_SQUARE}'">
+                            <figcaption class="text-[11px] text-slate-400 text-center italic">Foto Ilustrasi / Dokumentasi ZONA NETIZEN</figcaption>
+                        </figure>
+
+                        <!-- Content Body -->
+                        <div class="article-body font-serif text-slate-800 leading-relaxed text-base pt-2">
+                            ${article.content || '<p>Tidak ada isi artikel.</p>'}
+                        </div>
+
+                        ${bottomAdHtml}
+
+                        <!-- Share & Tags -->
+                        <footer class="pt-6 border-t border-slate-200 space-y-4">
+                            ${article.tags ? `
+                                <div class="flex flex-wrap items-center gap-2 text-xs">
+                                    <span class="font-bold text-slate-700">Tags:</span>
+                                    ${article.tags.split(',').map(tag => `
+                                        <a href="#search?q=${encodeURIComponent(tag.trim())}" class="bg-slate-100 hover:bg-slate-200 text-slate-600 px-2.5 py-1 rounded">#${tag.trim()}</a>
+                                    `).join('')}
+                                </div>
+                            ` : ''}
+
+                            <div class="bg-slate-50 p-4 rounded-md border border-slate-200 flex flex-col md:flex-row justify-between items-center gap-3">
+                                <span class="text-xs font-semibold text-slate-700">Bagikan Berita Ini:</span>
+                                <div class="flex space-x-2 text-xs">
+                                    <a href="https://api.whatsapp.com/send?text=${encodeURIComponent(article.title + ' ' + window.location.href)}" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded font-semibold">WhatsApp</a>
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded font-semibold">Facebook</a>
+                                    <a href="https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(article.title)}" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1.5 rounded font-semibold">X / Twitter</a>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
+                `;
+            } catch (err) {
+                console.error("Article detail error:", err);
+                app.innerHTML = `<div class="p-4 bg-red-50 text-red-700 text-sm border border-red-200 rounded">Gagal memuat detail berita.</div>`;
+            }
+        }
+
+        // 4. SEARCH PAGE
+        async function renderSearchPage(queryStr) {
+            const app = document.getElementById('app-content');
+            document.title = `Pencarian: ${queryStr} - ZONA NETIZEN`;
+
+            app.innerHTML = `<div class="animate-pulse text-center py-10 text-slate-400">Mencari berita: "${queryStr}"...</div>`;
+
+            try {
+                const allArticles = await fetchAllArticlesSafe();
+                const published = allArticles.filter(a => a.status === "published");
+                
+                const searchLower = queryStr.toLowerCase();
+                const matched = published.filter(data => {
+                    const titleMatch = (data.title || '').toLowerCase().includes(searchLower);
+                    const excerptMatch = (data.excerpt || '').toLowerCase().includes(searchLower);
+                    const tagMatch = (data.tags || '').toLowerCase().includes(searchLower);
+                    return titleMatch || excerptMatch || tagMatch;
+                });
+
+                app.innerHTML = `
+                    <div class="space-y-6">
+                        <div class="border-b border-slate-200 pb-4">
+                            <span class="text-xs text-slate-400 font-semibold uppercase">Hasil Pencarian</span>
+                            <h1 class="text-xl md:text-2xl font-bold text-slate-900">Kata Kunci: "${queryStr}" (${matched.length} Berita)</h1>
+                        </div>
+
+                        ${matched.length === 0 ? `
+                            <div class="text-center py-16 border border-dashed border-slate-300 rounded">
+                                <p class="text-sm text-slate-500">Tidak ditemukan berita yang cocok dengan kata kunci tersebut.</p>
+                            </div>
+                        ` : `
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                ${matched.map(a => createArticleCard(a)).join('')}
+                            </div>
+                        `}
+                    </div>
+                `;
+            } catch (err) {
+                console.error("Search error:", err);
+                app.innerHTML = `<div class="p-4 bg-red-50 text-red-700 text-sm border border-red-200 rounded">Terjadi kesalahan saat mencari berita.</div>`;
+            }
+        }
+
+        // 5. TIM REDAKSI PAGE
+        function renderRedaksiPage() {
+            document.title = "Tim Redaksi - ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="max-w-3xl mx-auto space-y-6 border border-slate-200 rounded-lg p-6 bg-white">
+                    <h1 class="text-2xl font-black text-slate-900 border-b border-slate-200 pb-3">TIM REDAKSI ZONA NETIZEN</h1>
+                    
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        ZONA NETIZEN dipublikasikan dan dikelola secara profesional oleh tim jurnalis serta pengembang digital yang berdedikasi menjaga integritas dan independensi informasi publik.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm pt-2">
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded">
+                            <span class="text-xs text-slate-400 font-bold uppercase tracking-wider block mb-1">Penanggung Jawab</span>
+                            <strong class="text-base text-slate-900">Edy Saputra</strong>
+                        </div>
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded">
+                            <span class="text-xs text-slate-400 font-bold uppercase tracking-wider block mb-1">Web Developer</span>
+                            <strong class="text-base text-slate-900">Logis Denis Prabowo</strong>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-slate-200 pt-4 space-y-2 text-sm text-slate-700">
+                        <p><strong>Alamat Redaksi:</strong> Indramayu, Jawa Barat, Indonesia</p>
+                        <p><strong>Email Kontak:</strong> zonanetizen.xyz@gmail.com</p>
+                        <p><strong>Telepon / WA:</strong> 0823-7947-4173</p>
+                        <p><strong>Domain Resmi:</strong> https://zonanetizen.xyz</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // 6. PRIVACY & POLICY PAGE
+        function renderPrivacyPage() {
+            document.title = "Kebijakan Privasi - ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="max-w-3xl mx-auto space-y-4 border border-slate-200 rounded-lg p-6 bg-white text-sm text-slate-700 leading-relaxed">
+                    <h1 class="text-2xl font-black text-slate-900 border-b border-slate-200 pb-3">KEBIJAKAN PRIVASI (PRIVACY POLICY)</h1>
+                    <p>Selamat datang di <strong>ZONA NETIZEN</strong> (https://zonanetizen.xyz). Privasi pengunjung adalah prioritas utama kami.</p>
+                    
+                    <h2 class="font-bold text-slate-900 text-base pt-2">1. Pengumpulan Informasi</h2>
+                    <p>Kami tidak mengumpulkan informasi pribadi secara langsung dari pembaca umum kecuali data analitik statistik agregat non-pribadi seperti jumlah tayangan halaman (page views).</p>
+
+                    <h2 class="font-bold text-slate-900 text-base pt-2">2. Cookies & Sesi Broadcast</h2>
+                    <p>Website ini dapat menggunakan penyimpanan lokal (local storage / session storage) untuk mengingat pilihan tayangan atau mencegah penghitungan tayangan berulang dari perangkat yang sama.</p>
+
+                    <h2 class="font-bold text-slate-900 text-base pt-2">3. Tautan Pihak Ketiga & Iklan</h2>
+                    <p>Situs ini dapat menampilkan spanduk atau tautan iklan dari pihak ketiga. Kami tidak bertanggung jawab atas isi kebijakan privasi dari situs web pihak ketiga yang ditautkan.</p>
+
+                    <h2 class="font-bold text-slate-900 text-base pt-2">4. Hubungi Kami</h2>
+                    <p>Jika ada pertanyaan mengenai kebijakan privasi ini, silakan hubungi kami via email di: <strong>zonanetizen.xyz@gmail.com</strong>.</p>
+                </div>
+            `;
+        }
+
+        // 7. LEGAL PAGE
+        function renderLegalPage() {
+            document.title = "Legal Disclaimer - ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="max-w-3xl mx-auto space-y-4 border border-slate-200 rounded-lg p-6 bg-white text-sm text-slate-700 leading-relaxed">
+                    <h1 class="text-2xl font-black text-slate-900 border-b border-slate-200 pb-3">LEGAL PAGE & DISCLAIMER</h1>
+                    
+                    <p>Seluruh materi dan artikel berita yang dipublikasikan di portal <strong>ZONA NETIZEN</strong> disusun untuk tujuan memberikan informasi tepercaya dan independen bagi publik.</p>
+
+                    <h2 class="font-bold text-slate-900 text-base pt-2">1. Penggunaan Konten</h2>
+                    <p>Setiap konten berita, foto, dan grafis di ZONA NETIZEN dilindungi Undang-Undang Hak Cipta yang berlaku di Republik Indonesia. Pengutipan berita diperbolehkan dengan mencantumkan sumber berupa link aktif ke artikel ZONA NETIZEN.</p>
+
+                    <h2 class="font-bold text-slate-900 text-base pt-2">2. Tanggung Jawab Informasi</h2>
+                    <p>Redaksi berusaha menyajikan berita secara akurat. Namun demikian, ZONA NETIZEN tidak bertanggung jawab atas kerugian langsung maupun tidak langsung akibat penggunaan informasi dari situs ini.</p>
+
+                    <h2 class="font-bold text-slate-900 text-base pt-2">3. Pedoman Hak Jawab</h2>
+                    <p>Pihak yang merasa dirugikan oleh pemberitaan dapat mengajukan Hak Jawab atau Koreksi Berita sesuai Undang-Undang Pers No. 40 Tahun 1999 melalui kontak resmi redaksi.</p>
+                </div>
+            `;
+        }
+
+        // 8. CONTACT PAGE
+        function renderContactPage() {
+            document.title = "Kontak Redaksi - ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="max-w-xl mx-auto space-y-6 border border-slate-200 rounded-lg p-6 bg-white text-sm">
+                    <h1 class="text-2xl font-black text-slate-900 border-b border-slate-200 pb-3">HUBUNGI REDAKSI</h1>
+                    <p class="text-slate-600">Sampaikan pers rilis, kerjasama periklanan, atau konfirmasi berita ke alamat kontak berikut:</p>
+                    
+                    <div class="space-y-3 bg-slate-50 p-4 border border-slate-200 rounded">
+                        <p><strong>Email Utama:</strong> zonanetizen.xyz@gmail.com</p>
+                        <p><strong>Telepon / WhatsApp:</strong> 0823-7947-4173</p>
+                        <p><strong>Penanggung Jawab:</strong> Edy Saputra</p>
+                        <p><strong>Web Developer:</strong> Logis Denis Prabowo</p>
+                        <p><strong>Alamat Kantoran:</strong> Indramayu, Jawa Barat, Indonesia</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // NOT FOUND
+        function renderNotFound() {
+            const app = document.getElementById('app-content');
+            app.innerHTML = `
+                <div class="text-center py-20">
+                    <h1 class="text-4xl font-black text-slate-800">404</h1>
+                    <p class="text-slate-500 my-2">Halaman atau berita tidak ditemukan.</p>
+                    <a href="#index" class="text-red-600 font-bold underline">Kembali ke Beranda</a>
+                </div>
+            `;
+        }
+
+        // ==========================================
+        // ADMIN PANEL MODULES
+        // ==========================================
+
+        // ADMIN LOGIN
+        function renderAdminLogin() {
+            if (currentUser) {
+                window.location.hash = '#admin';
+                return;
+            }
+
+            document.title = "Login Admin - ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            app.innerHTML = `
+                <div class="max-w-md mx-auto my-12 bg-white border border-slate-200 p-8 rounded-lg">
+                    <div class="text-center mb-6">
+                        <img src="${DEFAULT_LOGO_SQUARE}" alt="Logo" class="h-16 w-16 mx-auto rounded-full mb-3 border">
+                        <h1 class="text-xl font-black text-slate-900">ZONA NETIZEN</h1>
+                        <p class="text-xs text-slate-500 font-semibold tracking-wider uppercase mt-1">Administrator Portal Login</p>
+                    </div>
+
+                    <div id="login-error" class="hidden p-3 bg-red-100 text-red-700 text-xs rounded mb-4 border border-red-200"></div>
+
+                    <form onsubmit="handleAdminLogin(event)" class="space-y-4 text-sm">
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Email Administrator</label>
+                            <input type="email" id="login-email" required class="w-full px-3 py-2 border border-slate-300 rounded focus:outline-none focus:border-red-600" placeholder="logisshope@gmail.com">
+                        </div>
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Password</label>
+                            <input type="password" id="login-password" required class="w-full px-3 py-2 border border-slate-300 rounded focus:outline-none focus:border-red-600" placeholder="••••••••">
+                        </div>
+                        <button type="submit" id="login-submit-btn" class="w-full bg-slate-900 hover:bg-red-600 text-white font-bold py-2.5 rounded transition">
+                            Masuk ke Admin Panel
+                        </button>
+                    </form>
+                </div>
+            `;
+        }
+
+        window.handleAdminLogin = async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value.trim();
+            const password = document.getElementById('login-password').value;
+            const errBox = document.getElementById('login-error');
+            const submitBtn = document.getElementById('login-submit-btn');
+
+            errBox.classList.add('hidden');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Memproses Login...';
+
+            if (email !== ALLOWED_ADMIN_EMAIL) {
+                errBox.textContent = "Akses ditolak. Email bukan administrator sah.";
+                errBox.classList.remove('hidden');
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Masuk ke Admin Panel';
+                return;
+            }
+
+            try {
+                const cred = await signInWithEmailAndPassword(auth, email, password);
+                if (cred.user.email === ALLOWED_ADMIN_EMAIL) {
+                    currentUser = cred.user;
+                    window.location.hash = '#admin';
+                } else {
+                    await signOut(auth);
+                    errBox.textContent = "Akses hanya diperbolehkan untuk logisshope@gmail.com";
+                    errBox.classList.remove('hidden');
+                }
+            } catch (err) {
+                console.error("Login Error:", err);
+                let msg = err.message || "Email / password salah.";
+                if (err.code === 'auth/api-key-not-valid' || msg.includes('api-key-not-valid')) {
+                    msg = "Firebase API Key belum valid atau dibatasi pada Firebase Console. Mohon perbarui 'apiKey' pada firebaseConfig dengan Web API Key yang sah dari Firebase Console.";
+                } else if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password' || err.code === 'auth/invalid-credential') {
+                    msg = "Email atau password administrator salah.";
+                }
+                errBox.textContent = "Gagal login: " + msg;
+                errBox.classList.remove('hidden');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Masuk ke Admin Panel';
+            }
+        };
+
+        window.handleAdminLogout = async function() {
+            await signOut(auth);
+            currentUser = null;
+            window.location.hash = '#admin/login';
+        };
+
+        // ADMIN LAYOUT WRAPPER
+        function getAdminWrapperHtml(activeTab, bodyHtml) {
+            return `
+                <div class="bg-slate-50 min-h-[600px] rounded-lg border border-slate-200 overflow-hidden flex flex-col md:flex-row">
+                    <!-- Admin Sidebar -->
+                    <aside class="w-full md:w-64 bg-slate-900 text-slate-300 p-4 flex flex-col justify-between border-r border-slate-800">
+                        <div>
+                            <div class="pb-4 mb-4 border-b border-slate-800 flex items-center space-x-2">
+                                <img src="${DEFAULT_LOGO_SQUARE}" class="h-8 w-8 rounded">
+                                <div>
+                                    <h3 class="font-bold text-white text-sm">ZONA NETIZEN</h3>
+                                    <span class="text-[10px] text-amber-400 font-semibold block">Admin Panel</span>
+                                </div>
+                            </div>
+                            <nav class="space-y-1 text-xs font-semibold">
+                                <a href="#admin" class="block px-3 py-2 rounded ${activeTab === 'dashboard' ? 'bg-red-600 text-white' : 'hover:bg-slate-800'}">Dashboard</a>
+                                <a href="#admin/articles" class="block px-3 py-2 rounded ${activeTab === 'articles' ? 'bg-red-600 text-white' : 'hover:bg-slate-800'}">Kelola Artikel</a>
+                                <a href="#admin/articles/new" class="block px-3 py-2 rounded ${activeTab === 'new-article' ? 'bg-red-600 text-white' : 'hover:bg-slate-800'}">+ Tambah Artikel</a>
+                                <a href="#admin/categories" class="block px-3 py-2 rounded ${activeTab === 'categories' ? 'bg-red-600 text-white' : 'hover:bg-slate-800'}">Kategori</a>
+                                <a href="#admin/ads" class="block px-3 py-2 rounded ${activeTab === 'ads' ? 'bg-red-600 text-white' : 'hover:bg-slate-800'}">Manajemen Iklan</a>
+                                <a href="#admin/settings" class="block px-3 py-2 rounded ${activeTab === 'settings' ? 'bg-red-600 text-white' : 'hover:bg-slate-800'}">Pengaturan Situs</a>
+                            </nav>
+                        </div>
+                        <div class="pt-4 mt-6 border-t border-slate-800 text-xs">
+                            <p class="text-slate-400 mb-2 truncate">${currentUser.email}</p>
+                            <button onclick="handleAdminLogout()" class="w-full bg-slate-800 hover:bg-red-600 text-white py-1.5 rounded transition">Logout</button>
+                        </div>
+                    </aside>
+
+                    <!-- Admin Main Content -->
+                    <main class="flex-grow p-6 bg-white">
+                        ${bodyHtml}
+                    </main>
+                </div>
+            `;
+        }
+
+        // 1. ADMIN DASHBOARD HOME
+        async function renderAdminDashboard() {
+            document.title = "Dashboard Admin - ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            try {
+                const artSnap = await getDocs(collection(db, "articles"));
+                const adSnap = await getDocs(collection(db, "ads"));
+
+                let totalArticles = artSnap.size;
+                let publishedCount = 0;
+                let draftCount = 0;
+                let totalViews = 0;
+
+                artSnap.forEach(d => {
+                    const data = d.data();
+                    if (data.status === 'published') publishedCount++;
+                    if (data.status === 'draft') draftCount++;
+                    totalViews += (data.views || 0);
+                });
+
+                let totalAds = adSnap.size;
+                let activeAds = 0;
+                adSnap.forEach(d => {
+                    if (d.data().active) activeAds++;
+                });
+
+                const body = `
+                    <div class="space-y-6">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <h1 class="text-xl font-bold text-slate-900">Dashboard Statistik</h1>
+                            <a href="#admin/articles/new" class="bg-red-600 text-white text-xs font-bold px-3 py-2 rounded hover:bg-red-700">+ Tulis Artikel Baru</a>
+                        </div>
+
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="p-4 border border-slate-200 rounded bg-slate-50">
+                                <span class="text-xs text-slate-500 font-bold block">TOTAL ARTIKEL</span>
+                                <span class="text-2xl font-black text-slate-900">${totalArticles}</span>
+                            </div>
+                            <div class="p-4 border border-slate-200 rounded bg-slate-50">
+                                <span class="text-xs text-emerald-600 font-bold block">PUBLISHED</span>
+                                <span class="text-2xl font-black text-emerald-600">${publishedCount}</span>
+                            </div>
+                            <div class="p-4 border border-slate-200 rounded bg-slate-50">
+                                <span class="text-xs text-amber-600 font-bold block">DRAFT</span>
+                                <span class="text-2xl font-black text-amber-600">${draftCount}</span>
+                            </div>
+                            <div class="p-4 border border-slate-200 rounded bg-slate-50">
+                                <span class="text-xs text-blue-600 font-bold block">TOTAL VIEWS</span>
+                                <span class="text-2xl font-black text-blue-600">${totalViews}</span>
+                            </div>
+                            <div class="p-4 border border-slate-200 rounded bg-slate-50">
+                                <span class="text-xs text-purple-600 font-bold block">TOTAL IKLAN</span>
+                                <span class="text-2xl font-black text-purple-600">${totalAds}</span>
+                            </div>
+                            <div class="p-4 border border-slate-200 rounded bg-slate-50">
+                                <span class="text-xs text-slate-700 font-bold block">IKLAN AKTIF</span>
+                                <span class="text-2xl font-black text-slate-900">${activeAds}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                app.innerHTML = getAdminWrapperHtml('dashboard', body);
+            } catch (err) {
+                console.error("Dashboard render error:", err);
+            }
+        }
+
+        // 2. ADMIN MANAGE ARTICLES
+        async function renderAdminArticles() {
+            document.title = "Kelola Artikel - Admin ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            try {
+                const snap = await getDocs(query(collection(db, "articles"), orderBy("createdAt", "desc")));
+                const articles = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+                const body = `
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                            <h1 class="text-xl font-bold text-slate-900">Daftar Artikel (${articles.length})</h1>
+                            <a href="#admin/articles/new" class="bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded hover:bg-red-700">+ Buat Artikel</a>
+                        </div>
+
+                        ${articles.length === 0 ? `
+                            <p class="text-sm text-slate-500 py-8 text-center">Belum ada artikel yang ditambahkan.</p>
+                        ` : `
+                            <div class="overflow-x-auto">
+                                <table class="w-full text-left text-xs border-collapse">
+                                    <thead>
+                                        <tr class="bg-slate-100 border-b border-slate-200 text-slate-700 uppercase font-bold">
+                                            <th class="p-2">Judul</th>
+                                            <th class="p-2">Kategori</th>
+                                            <th class="p-2">Status</th>
+                                            <th class="p-2">Views</th>
+                                            <th class="p-2">Tanggal</th>
+                                            <th class="p-2 text-right">Aksi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="divide-y divide-slate-200">
+                                        ${articles.map(a => `
+                                            <tr class="hover:bg-slate-50">
+                                                <td class="p-2 font-semibold text-slate-900 max-w-xs truncate">${a.title}</td>
+                                                <td class="p-2">${a.categoryName || '-'}</td>
+                                                <td class="p-2">
+                                                    <span class="px-2 py-0.5 rounded font-bold uppercase text-[10px] ${a.status === 'published' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">
+                                                        ${a.status}
+                                                    </span>
+                                                </td>
+                                                <td class="p-2">${a.views || 0}</td>
+                                                <td class="p-2 text-slate-500">${formatDate(a.publishedAt || a.createdAt)}</td>
+                                                <td class="p-2 text-right space-x-1">
+                                                    <a href="#admin/articles/edit/${a.id}" class="bg-blue-600 text-white px-2 py-1 rounded hover:bg-blue-700">Edit</a>
+                                                    <button onclick="deleteArticleDoc('${a.id}')" class="bg-red-600 text-white px-2 py-1 rounded hover:bg-red-700">Hapus</button>
+                                                </td>
+                                            </tr>
+                                        `).join('')}
+                                    </tbody>
+                                </table>
+                            </div>
+                        `}
+                    </div>
+                `;
+
+                app.innerHTML = getAdminWrapperHtml('articles', body);
+            } catch (err) {
+                console.error("Articles render error:", err);
+            }
+        }
+
+        window.deleteArticleDoc = async function(id) {
+            if (confirm("Apakah Anda yakin ingin menghapus artikel ini secara permanen?")) {
+                try {
+                    await deleteDoc(doc(db, "articles", id));
+                    renderAdminArticles();
+                } catch (e) {
+                    alert("Gagal menghapus: " + e.message);
+                }
+            }
+        };
+
+        // 3. ADMIN ARTICLE FORM (NEW / EDIT)
+        async function renderAdminArticleForm(articleId = null) {
+            const isEdit = !!articleId;
+            document.title = isEdit ? "Edit Artikel - Admin ZONA NETIZEN" : "Tambah Artikel Baru - Admin ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            let articleData = {
+                title: '', slug: '', excerpt: '', content: '', imageUrl: '', categoryName: 'Nasional',
+                authorName: 'Edy Saputra', tags: '', status: 'published', isFeatured: false, isBreaking: false
+            };
+
+            if (isEdit) {
+                try {
+                    const docSnap = await getDoc(doc(db, "articles", articleId));
+                    if (docSnap.exists()) {
+                        articleData = docSnap.data();
+                    }
+                } catch (e) {
+                    console.error("Fetch article edit error:", e);
+                }
+            }
+
+            const body = `
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center pb-3 border-b border-slate-200">
+                        <h1 class="text-xl font-bold text-slate-900">${isEdit ? 'Edit Artikel' : 'Tambah Artikel Baru'}</h1>
+                        <a href="#admin/articles" class="text-xs text-slate-600 hover:underline">← Kembali ke Artikel</a>
+                    </div>
+
+                    <form onsubmit="saveArticleForm(event, '${articleId || ''}')" class="space-y-4 text-xs">
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Judul Artikel</label>
+                            <input type="text" id="art-title" required value="${articleData.title}" oninput="autoSlug()" class="w-full px-3 py-2 border border-slate-300 rounded text-sm focus:outline-none focus:border-red-600">
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Slug (URL)</label>
+                            <input type="text" id="art-slug" required value="${articleData.slug}" class="w-full px-3 py-2 border border-slate-300 rounded bg-slate-50 text-slate-600 font-mono">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Kategori</label>
+                                <select id="art-category" class="w-full px-3 py-2 border border-slate-300 rounded">
+                                    ${DEFAULT_CATEGORIES.map(c => `
+                                        <option value="${c.name}" ${articleData.categoryName === c.name ? 'selected' : ''}>${c.name}</option>
+                                    `).join('')}
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Nama Penulis</label>
+                                <input type="text" id="art-author" value="${articleData.authorName || 'Edy Saputra'}" class="w-full px-3 py-2 border border-slate-300 rounded">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">URL Gambar Utama (Eksternal Image URL)</label>
+                            <input type="url" id="art-image" placeholder="https://example.com/gambar.jpg" value="${articleData.imageUrl}" class="w-full px-3 py-2 border border-slate-300 rounded">
+                            <span class="text-[10px] text-slate-400">Gunakan tautan gambar langsung dari CDN eksternal.</span>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Ringkasan / Excerpt</label>
+                            <textarea id="art-excerpt" rows="2" class="w-full px-3 py-2 border border-slate-300 rounded">${articleData.excerpt}</textarea>
+                        </div>
+
+                        <div>
+                            <label class="block font-bold text-slate-700 mb-1">Isi Berita Lengkap (HTML atau Teks Biasa)</label>
+                            <textarea id="art-content" rows="12" required class="w-full px-3 py-2 border border-slate-300 rounded font-sans text-sm">${articleData.content}</textarea>
+                            <span class="text-[10px] text-slate-400">Dapat menggunakan tag HTML seperti &lt;p&gt;, &lt;h2&gt;, &lt;strong&gt;, &lt;blockquote&gt;</span>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Tags (Pisahkan dengan koma)</label>
+                                <input type="text" id="art-tags" value="${articleData.tags || ''}" placeholder="politik, pemilu, indonesia" class="w-full px-3 py-2 border border-slate-300 rounded">
+                            </div>
+                            <div>
+                                <label class="block font-bold text-slate-700 mb-1">Status Publikasi</label>
+                                <select id="art-status" class="w-full px-3 py-2 border border-slate-300 rounded">
+                                    <option value="published" ${articleData.status === 'published' ? 'selected' : ''}>Published (Langsung Tayang)</option>
+                                    <option value="draft" ${articleData.status === 'draft' ? 'selected' : ''}>Draft (Simpan Sementara)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-6 pt-2">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" id="art-featured" ${articleData.isFeatured ? 'checked' : ''} class="rounded">
+                                <span class="font-bold text-slate-700">Jadikan Hero Featured (Berita Utama)</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" id="art-breaking" ${articleData.isBreaking ? 'checked' : ''} class="rounded">
+                                <span class="font-bold text-slate-700">Tampilkan di Breaking News Ticker</span>
+                            </label>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-200">
+                            <button type="submit" id="save-art-btn" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded text-sm">
+                                ${isEdit ? 'Simpan Perubahan' : 'Publikasikan Berita'}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            `;
+
+            app.innerHTML = getAdminWrapperHtml(isEdit ? 'articles' : 'new-article', body);
+        }
+
+        window.autoSlug = function() {
+            const title = document.getElementById('art-title').value;
+            const slugInput = document.getElementById('art-slug');
+            if (slugInput) {
+                slugInput.value = slugify(title);
+            }
+        };
+
+        window.saveArticleForm = async function(e, articleId) {
+            e.preventDefault();
+            const btn = document.getElementById('save-art-btn');
+            btn.disabled = true;
+            btn.textContent = 'Menyimpan...';
+
+            const payload = {
+                title: document.getElementById('art-title').value.trim(),
+                slug: document.getElementById('art-slug').value.trim() || slugify(document.getElementById('art-title').value),
+                categoryName: document.getElementById('art-category').value,
+                authorName: document.getElementById('art-author').value.trim() || 'Edy Saputra',
+                imageUrl: document.getElementById('art-image').value.trim(),
+                excerpt: document.getElementById('art-excerpt').value.trim(),
+                content: document.getElementById('art-content').value,
+                tags: document.getElementById('art-tags').value.trim(),
+                status: document.getElementById('art-status').value,
+                isFeatured: document.getElementById('art-featured').checked,
+                isBreaking: document.getElementById('art-breaking').checked,
+                updatedAt: serverTimestamp()
+            };
+
+            try {
+                if (articleId) {
+                    await updateDoc(doc(db, "articles", articleId), payload);
+                } else {
+                    payload.views = 0;
+                    payload.createdAt = serverTimestamp();
+                    payload.publishedAt = serverTimestamp();
+                    await addDoc(collection(db, "articles"), payload);
+                }
+                window.location.hash = '#admin/articles';
+            } catch (err) {
+                alert("Gagal menyimpan artikel: " + err.message);
+                btn.disabled = false;
+                btn.textContent = 'Simpan Berita';
+            }
+        };
+
+        // 4. ADMIN CATEGORIES
+        function renderAdminCategories() {
+            document.title = "Kategori - Admin ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            const body = `
+                <div class="space-y-4 text-xs">
+                    <h1 class="text-xl font-bold text-slate-900 pb-3 border-b border-slate-200">6 Kategori Utama Situs</h1>
+                    <p class="text-slate-500">Berikut adalah 6 kategori resmi yang diaktifkan dalam tata kelola ZONA NETIZEN:</p>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                        ${DEFAULT_CATEGORIES.map(c => `
+                            <div class="p-3 border border-slate-200 rounded bg-slate-50 font-bold text-slate-800 flex items-center justify-between">
+                                <span>${c.name}</span>
+                                <span class="text-[10px] text-slate-400 font-mono">#${c.slug}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+            app.innerHTML = getAdminWrapperHtml('categories', body);
+        }
+
+        // 5. ADMIN MANAGE ADS
+        async function renderAdminAds() {
+            document.title = "Manajemen Iklan - Admin ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            try {
+                const snap = await getDocs(collection(db, "ads"));
+                const ads = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+                const body = `
+                    <div class="space-y-6 text-xs">
+                        <div class="pb-3 border-b border-slate-200">
+                            <h1 class="text-xl font-bold text-slate-900">Sistem & Banner Iklan</h1>
+                        </div>
+
+                        <!-- Form Tambah Iklan -->
+                        <div class="p-4 border border-slate-200 bg-slate-50 rounded space-y-3">
+                            <h3 class="font-bold text-slate-800 text-sm">Tambah Banner Iklan Baru</h3>
+                            <form onsubmit="saveAdForm(event)" class="space-y-3">
+                                <div>
+                                    <label class="block font-bold mb-1">Nama / Label Iklan</label>
+                                    <input type="text" id="ad-name" required placeholder="Iklan Promo Produk A" class="w-full p-2 border rounded">
+                                </div>
+                                <div>
+                                    <label class="block font-bold mb-1">URL Gambar Banner</label>
+                                    <input type="url" id="ad-image" required placeholder="https://example.com/banner.jpg" class="w-full p-2 border rounded">
+                                </div>
+                                <div>
+                                    <label class="block font-bold mb-1">URL Tujuan Saat Diklik</label>
+                                    <input type="url" id="ad-target" required placeholder="https://example.com" class="w-full p-2 border rounded">
+                                </div>
+                                <div>
+                                    <label class="block font-bold mb-1">Posisi Penayangan</label>
+                                    <select id="ad-position" class="w-full p-2 border rounded">
+                                        <option value="article_interstitial">Article Interstitial (Popup Sebelum Baca)</option>
+                                        <option value="homepage">Homepage Banner</option>
+                                        <option value="article_top">Article Top (Atas Artikel)</option>
+                                        <option value="article_bottom">Article Bottom (Bawah Artikel)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="bg-slate-900 text-white font-bold px-4 py-2 rounded hover:bg-slate-800">Simpan Iklan</button>
+                            </form>
+                        </div>
+
+                        <!-- Table Ads -->
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-sm mb-2">Daftar Iklan</h3>
+                            ${ads.length === 0 ? `
+                                <p class="text-slate-400">Belum ada iklan tersimpan.</p>
+                            ` : `
+                                <div class="divide-y divide-slate-200 border border-slate-200 rounded">
+                                    ${ads.map(ad => `
+                                        <div class="p-3 flex items-center justify-between">
+                                            <div class="space-y-1">
+                                                <strong class="text-slate-900 text-sm">${ad.name}</strong>
+                                                <div class="text-[11px] text-slate-500">
+                                                    <span>Posisi: <strong>${ad.position}</strong></span> • 
+                                                    <span>Status: <strong class="${ad.active ? 'text-emerald-600' : 'text-slate-400'}">${ad.active ? 'Aktif' : 'Nonaktif'}</strong></span>
+                                                </div>
+                                            </div>
+                                            <div class="space-x-2">
+                                                <button onclick="toggleAdStatus('${ad.id}', ${!ad.active})" class="px-2 py-1 bg-slate-200 rounded text-[11px] font-bold">${ad.active ? 'Matikan' : 'Aktifkan'}</button>
+                                                <button onclick="deleteAdDoc('${ad.id}')" class="px-2 py-1 bg-red-600 text-white rounded text-[11px] font-bold">Hapus</button>
+                                            </div>
+                                        </div>
+                                    `).join('')}
+                                </div>
+                            `}
+                        </div>
+                    </div>
+                `;
+
+                app.innerHTML = getAdminWrapperHtml('ads', body);
+            } catch (err) {
+                console.error("Ads render error:", err);
+            }
+        }
+
+        window.saveAdForm = async function(e) {
+            e.preventDefault();
+            const payload = {
+                name: document.getElementById('ad-name').value.trim(),
+                imageUrl: document.getElementById('ad-image').value.trim(),
+                targetUrl: document.getElementById('ad-target').value.trim(),
+                position: document.getElementById('ad-position').value,
+                active: true,
+                createdAt: serverTimestamp()
+            };
+
+            try {
+                await addDoc(collection(db, "ads"), payload);
+                renderAdminAds();
+            } catch (err) {
+                alert("Gagal menyimpan iklan: " + err.message);
+            }
+        };
+
+        window.toggleAdStatus = async function(id, status) {
+            try {
+                await updateDoc(doc(db, "ads", id), { active: status });
+                renderAdminAds();
+            } catch (e) {
+                alert("Gagal mengubah status iklan: " + e.message);
+            }
+        };
+
+        window.deleteAdDoc = async function(id) {
+            if (confirm("Hapus iklan ini?")) {
+                try {
+                    await deleteDoc(doc(db, "ads", id));
+                    renderAdminAds();
+                } catch (e) {
+                    alert("Gagal menghapus iklan: " + e.message);
+                }
+            }
+        };
+
+        // 6. ADMIN SETTINGS
+        function renderAdminSettings() {
+            document.title = "Pengaturan Situs - Admin ZONA NETIZEN";
+            const app = document.getElementById('app-content');
+
+            const body = `
+                <div class="space-y-4 text-xs">
+                    <h1 class="text-xl font-bold text-slate-900 pb-3 border-b border-slate-200">Pengaturan Identitas Portal</h1>
+                    
+                    <div class="p-4 bg-slate-50 border border-slate-200 rounded space-y-2 text-slate-700">
+                        <p><strong>Nama Portal:</strong> ZONA NETIZEN</p>
+                        <p><strong>Domain Target:</strong> https://zonanetizen.xyz / https://www.zonanetizen.xyz</p>
+                        <p><strong>Penanggung Jawab:</strong> Edy Saputra</p>
+                        <p><strong>Web Developer:</strong> Logis Denis Prabowo</p>
+                        <p><strong>Kontak Email:</strong> zonanetizen.xyz@gmail.com</p>
+                        <p><strong>Telepon / Whatsapp:</strong> 0823-7947-4173</p>
+                        <p><strong>Favicon & Metadata Icon URL:</strong> https://cdn.phototourl.com/member/2026-08-06-c031a75e-778c-4193-9355-908627a652b3.jpg</p>
+                        <p><strong>Main Header Logo URL:</strong> https://cdn.phototourl.com/member/2026-08-06-dd5c6385-3c9e-4ee1-9751-df2a871bde54.png</p>
+                    </div>
+                </div>
+            `;
+            app.innerHTML = getAdminWrapperHtml('settings', body);
+        }
+    </script>
+</body>
+</html>
