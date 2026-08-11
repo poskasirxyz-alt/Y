@@ -305,27 +305,52 @@
 
         // Safe Article Fetcher (Avoids Firestore Composite Index Requirements by filtering/sorting in memory)
         async function fetchAllArticlesSafe() {
-            try {
-                const snap = await getDocs(collection(db, "articles"));
-                if (snap.empty) return MOCK_ARTICLES;
-                
-                const list = [];
-                snap.forEach(docSnap => {
-                    list.push({ id: docSnap.id, ...docSnap.data() });
-                });
-                
-                // Client side sort by publishedAt / createdAt desc
-                list.sort((a, b) => {
-                    const timeA = a.publishedAt?.seconds ? a.publishedAt.seconds * 1000 : new Date(a.publishedAt || 0).getTime();
-                    const timeB = b.publishedAt?.seconds ? b.publishedAt.seconds * 1000 : new Date(b.publishedAt || 0).getTime();
-                    return timeB - timeA;
-                });
+    try {
+        let snap;
 
-                return list.length > 0 ? list : MOCK_ARTICLES;
-            } catch (err) {
-                console.warn("Firestore fetch failed (permissions/API key issue). Falling back to mock dataset:", err.message);
-                return MOCK_ARTICLES;
-            }
+        if (currentUser && currentUser.email === ALLOWED_ADMIN_EMAIL) {
+            // ADMIN: boleh membaca semua artikel
+            snap = await getDocs(collection(db, "articles"));
+        } else {
+            // PUBLIK: hanya mengambil artikel yang sudah published
+            const publicQuery = query(
+                collection(db, "articles"),
+                where("status", "==", "published")
+            );
+
+            snap = await getDocs(publicQuery);
+        }
+
+        if (snap.empty) return MOCK_ARTICLES;
+
+        const list = [];
+
+        snap.forEach(docSnap => {
+            list.push({
+                id: docSnap.id,
+                ...docSnap.data()
+            });
+        });
+
+        // Urutkan artikel terbaru
+        list.sort((a, b) => {
+            const timeA = a.publishedAt?.seconds
+                ? a.publishedAt.seconds * 1000
+                : new Date(a.publishedAt || 0).getTime();
+
+            const timeB = b.publishedAt?.seconds
+                ? b.publishedAt.seconds * 1000
+                : new Date(b.publishedAt || 0).getTime();
+
+            return timeB - timeA;
+        });
+
+        return list;
+
+    } catch (err) {
+        console.error("Firestore fetch failed:", err);
+        return MOCK_ARTICLES;
+    }
         }
 
         // Format Date Helper
